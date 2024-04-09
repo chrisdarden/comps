@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { CollectionsHomeComponent } from './collections-home/CollectionsHome.component';
 import { CollectionsRoutingModule } from './collections-routing.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [CollectionsHomeComponent],
   imports: [
     CommonModule,
     CollectionsRoutingModule
-  ]
+  ],
+  exports: [CollectionsHomeComponent]
 })
 export class CollectionsModule { }
