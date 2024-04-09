@@ -10,9 +10,9 @@ import { ElementsModule } from "./elements/elements.module";
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ElementsModule,
+    // BrowserModule,
+    // AppRoutingModule,
+    // ElementsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
