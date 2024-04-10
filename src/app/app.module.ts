@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ElementsModule } from "./elements/elements.module";
-import { CollectionsModule } from "./collections/collections.module";
+// import { ElementsModule } from "./elements/elements.module"; -- implimenting lazy loading
+// import { CollectionsModule } from "./collections/collections.module"; -- implimenting lazy loading
 import { HomeComponent } from './Home/Home.component';
 import { NotFoundComponent } from './NotFound/NotFound.component';
 @NgModule({
@@ -15,8 +15,8 @@ import { NotFoundComponent } from './NotFound/NotFound.component';
    ],
   imports: [
     BrowserModule,
-    ElementsModule,
-    CollectionsModule,
+    // ElementsModule, -- implimenting lazy loading
+    // CollectionsModule, -- implimenting lazy loading
     AppRoutingModule
   ],
   providers: [],

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CollectionsHomeComponent } from './collections-home/CollectionsHome.component';
 
 const routes: Routes = [
-  { path: 'collections', component: CollectionsHomeComponent}
+  { path: '', component: CollectionsHomeComponent}
 ];
 
 @NgModule({

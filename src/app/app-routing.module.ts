@@ -4,6 +4,8 @@ import { HomeComponent } from './Home/Home.component';
 import { NotFoundComponent } from './NotFound/NotFound.component';
 
 const routes: Routes = [
+  { path: 'collections', loadChildren: () => import('./collections/collections.module').then(m => m.CollectionsModule)},
+  { path: 'elements', loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
