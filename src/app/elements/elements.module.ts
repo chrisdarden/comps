@@ -11,6 +11,6 @@ import { ElementsHomeComponent } from "./ElementsHome/ElementsHome.component";
     CommonModule,
     ElementsRoutingModule
   ],
-  exports: [ElementsHomeComponent]
+  exports: []
 })
 export class ElementsModule { }

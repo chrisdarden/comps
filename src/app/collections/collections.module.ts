@@ -10,6 +10,6 @@ import { CollectionsRoutingModule } from './collections-routing.module';
     CommonModule,
     CollectionsRoutingModule
   ],
-  exports: [CollectionsHomeComponent]
+  exports: []
 })
 export class CollectionsModule { }
