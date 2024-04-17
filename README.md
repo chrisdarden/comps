@@ -8,6 +8,14 @@ DO THIS FIRST
 
 npm i --legacy-peer-deps
 
+nvm use 16
+
+THIS PROJECT WILL NOT WORK WITH NODE 18 BECAUSE OF A HASH ALGORITHM CRYPTO MISMATCH ON NODE 18 AND WILL NOT COMPILE WITH WEBPACK
+
+MUST USE NODE 16
+
+npm start
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
