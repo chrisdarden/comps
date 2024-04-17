@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { ElementsModule } from "./elements/elements.module"; -- implimenting lazy loading
@@ -15,6 +15,7 @@ import { NotFoundComponent } from './NotFound/NotFound.component';
    ],
   imports: [
     BrowserModule,
+    RouterModule,
     // ElementsModule, -- implimenting lazy loading
     // CollectionsModule, -- implimenting lazy loading
     AppRoutingModule
