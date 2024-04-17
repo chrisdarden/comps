@@ -7,16 +7,22 @@ import { TableComponent } from './table/table.component';
 import { BiographyComponent } from './biography/biography.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
+import { RouterModule } from '@angular/router';
+// ...
 
 @NgModule({
-  declarations: [CollectionsHomeComponent, TableComponent,
+  declarations: [
+    CollectionsHomeComponent,
+    TableComponent,
     BiographyComponent,
     CompaniesComponent,
-    PartnersComponent],
+    PartnersComponent
+  ],
   imports: [
     CommonModule,
     CollectionsRoutingModule,
-    SharedModule
+    SharedModule,
+    RouterModule // Add RouterModule here
   ],
   exports: []
 })
