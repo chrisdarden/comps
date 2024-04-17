@@ -7,21 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollectionsHomeComponent implements OnInit {
 
-  data: {name: string, age: number, job: string}[] = [{
+  data: {name: string, age: number, job: string, employed: boolean}[] = [{
     name: 'James',
     age: 24,
-    job: 'Designer'
+    job: 'Designer',
+    employed: true,
   }, {
     name: 'Jill',
     age: 26,
-    job: 'Engineer'
+    job: 'Engineer',
+    employed: false,
   }, {
     name: 'Elyse',
     age: 25,
-    job: 'Engineer'
+    job: 'Engineer',
+    employed: true,
   }];
 
   headers = [{
+    key: 'employed',
+    label: 'Has a Job?'
+  },
+    {
     key: 'name',
     label: 'Name'
   }, {
