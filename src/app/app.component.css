@@ -1,0 +1,4 @@
+.app-container {
+  width: 80%; /* adjust this to your desired width */
+  margin: 0 auto; /* this will center the container */
+}
