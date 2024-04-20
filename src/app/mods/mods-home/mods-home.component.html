@@ -1,3 +1,15 @@
 <app-divider>Modal Component</app-divider>
 <button class="ui button" (click)="onClick()">Open Modal</button>
-<app-modal (close)="onClick()" *ngIf="modalOpen"></app-modal>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+  <div modalTitle>Header of modal</div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec
+  </p>
+  <ng-container modalFooter>
+    <button class="ui button" (click)="onClick()">Cancel this</button>
+    <button class="ui button" (click)="onClick()">OK this</button>
+  </ng-container>
+</app-modal>
+
+<app-divider>Accordion Component</app-divider>
+<app-accordion></app-accordion>
