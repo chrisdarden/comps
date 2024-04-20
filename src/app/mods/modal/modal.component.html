@@ -1,5 +1,7 @@
 <div (click)="onCloseClick()" class="ui dimmer visible active">
-  <div class="ui modal visible active">
+  <!-- stopPropagation() stops the event from bubbling to the top onCloseClick() event handler which will allow user to click anywhere in the model
+  and allow the user to keep the modal open unless intentionally clicking the close, X, or outside the modal -->
+  <div (click)="$event.stopPropagation()" class="ui modal visible active">
     <i (click)="onCloseClick()" class="close icon"></i>
     <div class="header">
       Header
