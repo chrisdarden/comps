@@ -7,7 +7,14 @@ import { AppComponent } from './app.component';
 // import { CollectionsModule } from "./collections/collections.module"; -- implimenting lazy loading
 import { HomeComponent } from './Home/Home.component';
 import { NotFoundComponent } from './NotFound/NotFound.component';
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './Home/Home.component';
+import { NotFoundComponent } from './NotFound/NotFound.component';
+import { ElementsModule } from './elements/elements.module';
 const routes = [
   { path: 'collections', loadChildren: () => import('./collections/collections.module').then(m => m.CollectionsModule)},
   { path: 'elements', loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
@@ -15,8 +22,18 @@ const routes = [
   { path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
+
 @NgModule({
   declarations: [
+    AppComponent,
+    HomeComponent,
+    NotFoundComponent
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    ElementsModule,
+    CollectionsModule,
       AppComponent,
       HomeComponent,
       NotFoundComponent
